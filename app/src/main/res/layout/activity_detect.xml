@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".Activities.DetectActivity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:id="@+id/iv_detected_image"
+            />
+
+  <LinearLayout
+      android:gravity="center"
+      android:layout_margin="12dp"
+      android:padding="8dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" android:orientation="horizontal">
+      <TextView
+          android:layout_margin="4dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Title"
+          android:textSize="20dp"
+          android:id="@+id/tv_detected_title"
+          android:textStyle="bold"
+          android:textColor="#000"/>
+      <TextView
+          android:layout_margin="4dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Title"
+          android:id="@+id/tv_detected_conf"
+          android:textSize="18dp"
+          android:textColor="#000"/>
+  </LinearLayout>
+        <TextView
+            android:layout_margin="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Related Match"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#000"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerviewRelated"
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+</LinearLayout>
+</ScrollView>
+</LinearLayout>

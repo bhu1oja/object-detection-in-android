@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_margin="4dp"
+        android:padding="8dp"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_margin="4dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:id="@+id/tv_related_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="title"
+            android:textStyle="bold"
+            android:textSize="14sp"/>
+        <TextView
+            android:layout_margin="4dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:id="@+id/tv_related_confidence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="60%"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+    <View
+        android:layout_margin="4dp"
+        android:padding="8dp"
+        android:layout_below="@+id/ll1"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#48E1DCDC"
+        />
+
+</RelativeLayout>
