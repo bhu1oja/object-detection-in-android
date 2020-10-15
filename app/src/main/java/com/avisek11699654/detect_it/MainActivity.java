@@ -38,6 +38,8 @@ private Button btnSelectImage, btnViewHistory;
                 startActivity(new Intent(MainActivity.this, HistoryActivity.class));
             }
         });
+
+
     }
 
 

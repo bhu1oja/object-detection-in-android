@@ -43,14 +43,29 @@
           android:textSize="18dp"
           android:textColor="#000"/>
   </LinearLayout>
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" >
+       <Button
+           android:padding="8dp"
+           android:layout_centerInParent="true"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Share"
+           android:textAllCaps="false"
+           android:textColor="#fff"
+           android:background="@drawable/button_bg"
+           android:id="@+id/btn_share"/>
+   </RelativeLayout>
         <TextView
             android:layout_margin="8dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Related Match"
+            android:text="Related Confidence"
             android:textSize="20dp"
             android:textStyle="bold"
             android:textColor="#000"/>
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerviewRelated"
             android:scrollbars="none"
@@ -58,4 +73,5 @@
             android:layout_height="wrap_content" />
 </LinearLayout>
 </ScrollView>
+
 </LinearLayout>

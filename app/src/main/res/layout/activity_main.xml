@@ -42,13 +42,7 @@
         android:textColor="#fff"
         android:id="@+id/btn_history"
         android:text="History"/>
-    <Button
-        android:layout_margin="8dp"
-        android:background="@drawable/button_bg"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="#fff"
-        android:text="Detect"/>
+
 
 
 </LinearLayout>
